@@ -55,6 +55,7 @@
     <li>MongoDB</li>
     <li>JSON Web Tokens (JWT)</li>
     <li>bcrypt (for password hashing)</li>
+    <li>CROS</li>
   </ul>
   
   <h2>Setup Instructions</h2>
