@@ -1,12 +1,9 @@
 const asynHandler = require("express-async-handler")
 const Contact = require("../models/contactModel")
 
-
-
 const handleContactNotFound = (res) =>{
     res.status(404);
     throw new Error("Contact Not Found")
-    
 }
 
 
