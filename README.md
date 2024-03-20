@@ -54,7 +54,6 @@
     <li>Express.js</li>
     <li>MongoDB</li>
     <li>JSON Web Tokens (JWT)</li>
-    <li>Joi (for input validation)</li>
     <li>bcrypt (for password hashing)</li>
   </ul>
   
