@@ -12,8 +12,8 @@ const PORT = process.env.PORT || 5000 ;
 //middleware 
 app.use(cors({
     origin: 'http://localhost:3000',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these methods
-    allowedHeaders: ['Content-Type', 'Authorization'] // Allow these headers
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'] 
   }));
 app.use(express.json());
 app.use("/api/contacts" , require("./routes/contactRoutes"))
