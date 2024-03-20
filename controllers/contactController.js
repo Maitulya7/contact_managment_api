@@ -9,15 +9,15 @@ const handleContactNotFound = (res) =>{
 
 //@desc get all contacts
 //@route GET /api/contacts
-//@access public 
+//@access private 
 const getContact = asynHandler(async(req,res) =>{
-    const contact = await Contact.find();
+    const contact = await Contact.find({user_id:req.user.id});
     res.status(200).json(contact)
 })
 
 //@desc get contacts by ID
 //@route GET /api/contacts/:id
-//@access public 
+//@access private 
 const getContactByID = asynHandler( async (req,res) => {
     const contact = await Contact.findById(req.params.id);
     if(!contact){
@@ -28,7 +28,7 @@ const getContactByID = asynHandler( async (req,res) => {
 
 //@desc create contacts
 //@route POST /api/contacts
-//@access public 
+//@access private 
 const createContact = asynHandler( async (req,res) => {
     console.log("the request body is :", req.body)
     const {name , email , phone_number} = req.body;
@@ -46,7 +46,7 @@ const createContact = asynHandler( async (req,res) => {
 
 //@desc Update contacts by ID
 //@route PUT /api/contacts/:id
-//@access public 
+//@access private 
 const updateContact = asynHandler( async (req,res) => {
     const contact = await Contact.findById(req.params.id);
     if(!contact){
@@ -62,7 +62,7 @@ const updateContact = asynHandler( async (req,res) => {
 /*  */
 //@desc Delete contacts by ID
 //@route DELETE /api/contacts/:id
-//@access public 
+//@access private 
 const deleteContact = asynHandler( async (req,res) => {
     const contact = await Contact.findById(req.params.id)
     if(!contact){
