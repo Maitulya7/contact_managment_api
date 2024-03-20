@@ -13,12 +13,12 @@
   
   <h2>Features</h2>
   <ul>
-    <li>User Authentication: Users can register and login securely.</li>
-    <li>JWT Authentication: JSON Web Token authentication for secure access to endpoints.</li>
-    <li>Contact CRUD Operations: Create, Read, Update, and Delete contacts.</li>
-    <li>Private Routes: Routes that require authentication.</li>
-    <li>Data Validation: Ensure data integrity with validation on input.</li>
-    <li>Scalability: Designed for scalability and maintainability.</li>
+    <li>User Authentication: Users can register and login securely. 🔐</li>
+    <li>JWT Authentication: JSON Web Token authentication for secure access to endpoints. 🔑</li>
+    <li>Contact CRUD Operations: Create, Read, Update, and Delete contacts. 🔄</li>
+    <li>Private Routes: Routes that require authentication. 🔒</li>
+    <li>Data Validation: Ensure data integrity with validation on input. ✅</li>
+    <li>Scalability: Designed for scalability and maintainability. 🚀</li>
   </ul>
   
   <h2>Endpoints</h2>
