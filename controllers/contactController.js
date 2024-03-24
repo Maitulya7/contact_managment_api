@@ -31,13 +31,13 @@ const getContactByID = asynHandler( async (req,res) => {
 //@access private 
 const createContact = asynHandler( async (req,res) => {
     console.log("the request body is :", req.body)
-    const {name , email , phone_number} = req.body;
-    if(!name || !email  || !phone_number){
+    const {username , email , phone_number} = req.body;
+    if(!username || !email  || !phone_number){
         res.status(400);
         throw new Error("All fields are required")
     }
     const contact = await Contact.create({
-        name,
+        username,
         email,
         phone_number,
         user_id:req.user.id
